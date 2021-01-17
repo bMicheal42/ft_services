@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php
+  labels:
+    app: php
+spec:
+  selector:
+    matchLabels:
+      app: php
+  replicas: 1 #кол-во подов
+  template: #описание pod который будет создан
+    metadata:
+      labels:
+        app: php
+    spec:
+     containers:
+      - name: phpmyadmin.inc.php
+        image: php_image
+        imagePullPolicy: Never
+#  restartPolicy: Always
