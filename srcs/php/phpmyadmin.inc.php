@@ -1,45 +1,33 @@
 <?php
-
-$cfg['blowfish_secret'] = '';
-
-/**
- * List of env variables
- */
-$vars = array(
-    'PMA_HOST',
-	'PMA_PORT',
-	'PMA_USER',
-	'MYSQL_ROOT_PASSWORD'
-);
+/* vim: set expandtab sw=4 ts=4 sts=4: */
 
 /**
- * Stock env variables in tab
+ * This is needed for cookie based authentication to encrypt password in
+ * cookie. Needs to be 32 chars long.
  */
-foreach ($vars as $var) {
-    $env = getenv($var);
-    if (!isset($_ENV[$var]) && $env !== false) {
-        $_ENV[$var] = $env;
-    }
-}
+$cfg['blowfish_secret'] = 'very long frase, 32-chars long....................!!!'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /**
- * Only one server
+ * Servers configuration
  */
-$i = 1;
+$i = 0;
 
+/**
+ * First server
+ */
+$i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
+$cfg['Servers'][$i]['host'] = 'cip-mariadb';
+$cfg['Servers'][$i]['port'] = '3306';
+$cfg['Servers'][$i]['user'] = 'bmicheal';
+$cfg['Servers'][$i]['password'] = 'school21';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = true;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 /**
- * Variable definition
+ * Directories for saving/loading files from server
  */
-$cfg['Servers'][$i]['host'] = "mysql-service";
-$cfg['Servers'][$i]['port'] = "3306";
-$cfg['Servers'][$i]['user'] = "user";
-$cfg['Servers'][$i]['password'] = "password";
-
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
