@@ -23,12 +23,11 @@ COPY    nginx.conf /etc/nginx/
 
 COPY    supervisor.conf /etc/supervisord.conf
 
-RUN     wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.tar.gz
+RUN     wget https://wordpress.org/latest.tar.gz
 
-RUN     tar xf phpMyAdmin-5.0.4-all-languages.tar.gz -C /var/www && \
-        mv /var/www/phpMyAdmin-5.0.4-all-languages /var/www/phpmyadmin
+RUN     tar xf latest.tar.gz -C /var/www
 
-COPY    phpmyadmin.inc.php /www/phpmyadmin/config.inc.php
+COPY    wp-config.php /www/wordpress/
 
 RUN     openssl req -x509 -nodes -newkey rsa:4096 -keyout /etc/nginx/key.pem -out /etc/nginx/cert.pem -days 365  -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com"
 

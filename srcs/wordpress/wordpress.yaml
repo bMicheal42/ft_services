@@ -1,38 +1,38 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: php-nginx
+  name: wordpress
   annotations:
     metallb.universe.tf/allow-shared-ip: wp
 spec:
   selector:
-    app: php
+    app: wordpress
   type: LoadBalancer
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 5000
-      name: php
+      port: 5050
+      targetPort: 5050
+      name: wordpress
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php
+  name: wordpress
   labels:
-    app: php
+    app: wordpress
 spec:
   selector:
     matchLabels:
-      app: php
+      app: wordpress
   replicas: 1 #кол-во подов
   template: #описание pod который будет создан
     metadata:
       labels:
-        app: php
+        app: wordpress
     spec:
       containers:
-        - name: php
-          image: php_image
+        - name: wordpress
+          image: wordpress_image
           imagePullPolicy: Never
           ports:
-            - containerPort: 5000
+            - containerPort: 5050
