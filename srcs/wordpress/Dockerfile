@@ -27,7 +27,7 @@ RUN     wget https://wordpress.org/latest.tar.gz
 
 RUN     tar xf latest.tar.gz -C /var/www
 
-COPY    wp-config.php /www/wordpress/
+COPY    wp-config.php /var/www/wordpress/
 
 RUN     openssl req -x509 -nodes -newkey rsa:4096 -keyout /etc/nginx/key.pem -out /etc/nginx/cert.pem -days 365  -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com"
 

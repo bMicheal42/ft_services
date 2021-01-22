@@ -19,7 +19,7 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'cip-mariadb';
+$cfg['Servers'][$i]['host'] = 'mdb';
 $cfg['Servers'][$i]['port'] = '3306';
 $cfg['Servers'][$i]['user'] = 'bmicheal';
 $cfg['Servers'][$i]['password'] = 'school21';

@@ -35,20 +35,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/ mariadb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcs/ftps" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs/ftps" />
       <recent name="$PROJECT_DIR$/srcs/ mariadb" />
       <recent name="$PROJECT_DIR$/srcs" />
       <recent name="$PROJECT_DIR$/srcs/php" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srcs/nginx" />
+      <recent name="$PROJECT_DIR$/srcs/mdb" />
       <recent name="$PROJECT_DIR$/srcs" />
+      <recent name="$PROJECT_DIR$/srcs/nginx" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,6 +87,8 @@
       <workItem from="1610949829082" duration="18528000" />
       <workItem from="1611037296167" duration="5672000" />
       <workItem from="1611055591684" duration="9528000" />
+      <workItem from="1611296127594" duration="3081000" />
+      <workItem from="1611305123991" duration="10696000" />
     </task>
     <task id="LOCAL-00001" summary="v2 only https">
       <created>1608299130107</created>

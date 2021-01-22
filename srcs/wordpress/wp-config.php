@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'TOP SECRET');
+define('DB_NAME', 'bmicheal_db');
 
 /** MySQL database username */
 define('DB_USER', 'bmicheal');
@@ -31,9 +31,9 @@ define('DB_PASSWORD', 'school21');
 /** MySQL hostname */
 define('DB_HOST', 'mdb');
 
-define('WP_HOME', 'http://192.168.99.101:5050' );
+define('WP_HOME', 'https://192.168.99.101:5050' );
 
-define('WP_SITEURL', 'http://192.168.99.101:5050' );
+define('WP_SITEURL', 'https://192.168.99.101:5050' );
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
