@@ -10,14 +10,16 @@
 #                                                                              #
 # **************************************************************************** #
 
-FROM alpine:3.7
+FROM    alpine:3.7
 
-RUN apk update && apk upgrade && apk add vsftpd openssl
+RUN     apk update && apk upgrade && apk add vsftpd openssl && \
+        echo "root:school21" | chpasswd
 
-COPY my.cnf /etc/
-COPY mdb.sh /
-COPY bmicheal_db.sql /
+COPY    ftps.conf /etc/vsftpd/vsftpd.conf
+COPY    ftps.sh .
 
-RUN chmod 777 ./mdb.sh
+RUN     openssl req -x509 -nodes -newkey rsa:4096 -keyout /etc/vsftpd/key.pem -out /etc/vsftpd/cert.pem -days 365  -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com"
 
-CMD	["./mdb.sh"]
+RUN     chmod 777 ./ftps.sh
+
+ENTRYPOINT ["sh","/ftps.sh"]

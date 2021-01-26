@@ -20,4 +20,4 @@ COPY bmicheal_db.sql /
 
 RUN chmod 777 ./mdb.sh
 
-CMD	["./mdb.sh"]
+ENTRYPOINT ["sh","/mdb.sh"]

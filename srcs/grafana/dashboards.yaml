@@ -1,0 +1,7 @@
+apiVersion: 1
+
+providers:
+  - name: "GOD"
+    type: file
+    options:
+      path: /usr/share/grafana/conf/dashboards
