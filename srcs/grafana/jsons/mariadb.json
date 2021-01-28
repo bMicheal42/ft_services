@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 6,
+  "id": 4,
   "links": [],
   "panels": [
     {
@@ -80,7 +80,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "docker_container_cpu",
+          "measurement": "docker_container_net",
           "orderByTime": "ASC",
           "policy": "default",
           "queryType": "randomWalk",
@@ -90,7 +90,7 @@
             [
               {
                 "params": [
-                  "usage_percent"
+                  "rx_bytes"
                 ],
                 "type": "field"
               },
@@ -104,7 +104,7 @@
             {
               "key": "app",
               "operator": "=",
-              "value": "grafana"
+              "value": "mdb"
             }
           ]
         }
@@ -159,12 +159,12 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "grafana",
-  "uid": "8E7-8VLMz",
+  "title": "mdb",
+  "uid": "FqfT84YMk",
   "version": 1
 }

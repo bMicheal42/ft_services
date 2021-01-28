@@ -10,20 +10,20 @@
 #                                                                              #
 # **************************************************************************** #
 
-FROM alpine:3.7
+FROM    alpine:3.7
 
-RUN apk update && apk upgrade && \
-    apk add --no-cache nginx openssl openssh supervisor
+RUN     apk update && apk upgrade && \
+        apk add --no-cache nginx openssl openssh supervisor
 
-RUN adduser bmicheal -D && echo "bmicheal:school21" | chpasswd
+RUN     adduser bmicheal -D && echo "bmicheal:school21" | chpasswd
 
-RUN mkdir /run/nginx/
+RUN     mkdir /run/nginx/
 
-COPY nginx.conf /etc/nginx/
-COPY supervisor.conf /etc/supervisord.conf
+COPY    nginx.conf /etc/nginx/
+COPY    supervisor.conf /etc/supervisord.conf
 
-RUN openssl req -x509 -nodes -newkey rsa:4096 -keyout /etc/nginx/key.pem -out /etc/nginx/cert.pem -days 365  -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com"
+RUN     openssl req -x509 -nodes -newkey rsa:4096 -keyout /etc/nginx/key.pem -out /etc/nginx/cert.pem -days 365  -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com"
 
-RUN ssh-keygen -A
+RUN     ssh-keygen -A
 
-CMD usr/bin/supervisord -c /etc/supervisord.conf
+CMD     usr/bin/supervisord -c /etc/supervisord.conf

@@ -9,7 +9,14 @@
     <list default="true" id="e1386e87-f88d-4704-ba2f-1b3986d99d60" name="Default Changelist" comment="v3 + wordpress / ssl works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/jsons/grafana.json" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/jsons/grafana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/grafana/jsons/influxdb.json" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/jsons/influxdb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mdb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/telegraf/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/telegraf/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +96,7 @@
       <workItem from="1611642017137" duration="17038000" />
       <workItem from="1611816536894" duration="452000" />
       <workItem from="1611817944827" duration="21000" />
+      <workItem from="1611821518565" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="v2 only https">
       <created>1608299130107</created>

@@ -15,12 +15,12 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 6,
+  "id": 1,
   "links": [],
   "panels": [
     {
       "aliasColors": {},
-      "bars": false,
+      "bars": true,
       "dashLength": 10,
       "dashes": false,
       "datasource": "influxdb",
@@ -80,7 +80,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "docker_container_cpu",
+          "measurement": "docker_container_net",
           "orderByTime": "ASC",
           "policy": "default",
           "queryType": "randomWalk",
@@ -90,7 +90,7 @@
             [
               {
                 "params": [
-                  "usage_percent"
+                  "rx_bytes"
                 ],
                 "type": "field"
               },
@@ -104,7 +104,7 @@
             {
               "key": "app",
               "operator": "=",
-              "value": "grafana"
+              "value": "php"
             }
           ]
         }
@@ -159,12 +159,12 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "grafana",
-  "uid": "8E7-8VLMz",
+  "title": "php",
+  "uid": "C8VMUVLGz",
   "version": 1
 }

@@ -1,3 +1,5 @@
+pkill -9 minikube dashboard
+minikube delete
 minikube start --vm-driver=virtualbox
 eval $(minikube docker-env)
 
