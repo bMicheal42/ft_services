@@ -7,22 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1386e87-f88d-4704-ba2f-1b3986d99d60" name="Default Changelist" comment="v3 + wordpress / ssl works">
-      <change afterPath="$PROJECT_DIR$/srcs/ftps/ftps.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/ftps/ftps.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/dashboards.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/datasources.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/jsons/grafana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/telegraf.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/telegraf/telegraf.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/ftps/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/ftps/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mdb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +57,6 @@
       <recent name="$PROJECT_DIR$/srcs/nginx" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,6 +87,8 @@
       <workItem from="1611296127594" duration="3081000" />
       <workItem from="1611305123991" duration="11906000" />
       <workItem from="1611642017137" duration="17038000" />
+      <workItem from="1611816536894" duration="452000" />
+      <workItem from="1611817944827" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="v2 only https">
       <created>1608299130107</created>

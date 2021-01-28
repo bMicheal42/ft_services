@@ -18,7 +18,7 @@ kubectl apply -f srcs/nginx/nginx.yaml
 kubectl apply -f srcs/php/php.yaml
 kubectl apply -f srcs/wordpress/wordpress.yaml
 kubectl apply -f srcs/mdb/mdb.yaml
-kubectl apply -f srcs/ftps/ftps.yamls
+kubectl apply -f srcs/ftps/ftps.yaml
 kubectl apply -f srcs/influxdb/influxdb.yaml
 kubectl apply -f srcs/grafana/grafana.yaml
 kubectl apply -f srcs/telegraf/telegraf.yaml
