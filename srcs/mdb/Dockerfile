@@ -1,4 +1,4 @@
-FROM    lpine:3.7
+FROM    alpine:3.7
 
 RUN     apk update && apk upgrade && apk add mariadb mariadb-client && mkdir -p /run/mysqld/
 
