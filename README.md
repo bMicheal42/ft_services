@@ -200,7 +200,7 @@ minikube dashboard
 > Deployment
 
 ```shell
-git clone https://github.com/parismart/ft_services.git
+git clone https://github.com/bMicheal42/ft_services.git
 cd ft_services && sh setup.sh
 ```
 
