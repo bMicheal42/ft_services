@@ -2,10 +2,12 @@
 
 ![be7b34e363d140dd908c944071e26720](https://user-images.githubusercontent.com/73602657/111482917-644a0d80-8745-11eb-83d7-76385b0dfb28.png)
 
-## Description
+## About
 
 You will discover cluster deployment and management with Kubernetes. You are going to do what is called "clustering".
 The project consists of implementing an infrastructure with different services. For this, we will use ```Kubernetes```, therefore, we will install a cluster that groups several service containers. Each service works in a dedicated container, and the containers have the same name as the associated service. For performance reasons the containers are built on ```Alpine Linux```. To complete the project we need the next components:
+
+Click here to see full [Subject][1]
 
 ### Components
 
@@ -221,3 +223,5 @@ cd ft_services && sh setup.sh
 - Manpage of vsFTPd.conf - [vsFTPd.conf](http://vsftpd.beasts.org/vsftpd_conf.html)
 - InfluxData Documentation - [InfluxData](https://docs.influxdata.com/)
 - Grafana Documentation - [Grafana Labs](https://grafana.com/docs/grafana/latest/)
+
+[1]: https://github.com/bMicheal42/ft_services/blob/master/services.pdf
